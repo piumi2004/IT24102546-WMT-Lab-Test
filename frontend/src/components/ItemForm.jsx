@@ -51,6 +51,14 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         onChange={handleChange}
         required
       />
+      <label>Warranty Period (months)</label>
+      <input
+        type="number"
+        name="warrantyPeriod"
+        value={formData.warrantyPeriod}
+        onChange={handleChange}
+        required
+      />  
 
       <label>Image URL</label>
       <input name="imageUrl" value={formData.imageUrl} onChange={handleChange} />
